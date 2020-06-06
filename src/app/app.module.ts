@@ -17,7 +17,7 @@ import { AuthService } from './_services/auth.service';
    ],
    imports: [
       BrowserModule,
-      HttpClientModule,//moduleimportedtocreatehttprequest
+      HttpClientModule, // moduleimportedtocreatehttprequest
       FormsModule
    ],
    providers: [
