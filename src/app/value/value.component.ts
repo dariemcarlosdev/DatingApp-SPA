@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ValueComponent implements OnInit {
   values: any;
-  constructor(private http: HttpClient) {} // Inject dependency with HttpCliente class and create http object instance.
+  constructor(private http: HttpClient) {} // Inject dependency with HttpClient  class and create http object instance.
 
   ngOnInit() {
     this.getValues();
