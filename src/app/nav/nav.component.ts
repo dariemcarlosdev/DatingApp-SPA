@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
-
+declare var $: any;
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -10,7 +10,8 @@ export class NavComponent implements OnInit {
   model: any = {};
   constructor(private authService: AuthService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
   login() {
     this.authService.login(this.model).subscribe(
       (next) => {
