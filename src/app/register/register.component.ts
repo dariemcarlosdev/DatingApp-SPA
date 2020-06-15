@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AuthService } from '../_services/auth.service';
 
 
 @Component({
@@ -8,15 +9,20 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
   // in order to receive properties into child Component we need use:
-  @Input() valuesFromHome: any; // now we have access to this property into register.component.html
+  // @Input() valuesFromHome: any; // now we have access to this property into register.component.html
   @Output() cancelRegister = new EventEmitter(); // registering property to enable communication child to parent.
   model: any = {};
-  constructor() {}
+  constructor(private authService: AuthService) {}
 
   ngOnInit() {}
 
   register() {
-    console.log(this.model);
+    this.authService.register(this.model).subscribe(() => {
+      console.log('registration successful');
+    }, error => {
+      console.log(error);
+      }
+    );
   }
 
   cancel() {
