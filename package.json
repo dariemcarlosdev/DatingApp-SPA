@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
     "@auth0/angular-jwt": "^4.2.0",
+    "@types/jest": "^26.0.0",
+    "@types/mocha": "^7.0.2",
     "alertifyjs": "^1.13.1",
     "bootstrap": "^4.5.0",
     "bootstrap-icons": "^1.0.0-alpha4",
