@@ -18,6 +18,7 @@ import { ListsComponent } from './lists/lists.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
+import { UserService } from './_services/user.service';
 
 @NgModule({
    declarations: [
@@ -39,6 +40,7 @@ import { appRoutes } from './routes';
    ],
    providers: [
       AuthService,
+      UserService,
       ErrorInterceptorProvider
    ],
    bootstrap: [
