@@ -19,6 +19,7 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { UserService } from './_services/user.service';
+import { MemberCardComponent } from './members/member-card/member-card.component';
 
 @NgModule({
    declarations: [
@@ -28,7 +29,8 @@ import { UserService } from './_services/user.service';
       RegisterComponent,
       ListsComponent,
       MemberListComponent,
-      MessagesComponent
+      MessagesComponent,
+      MemberCardComponent
    ],
    imports: [
       BrowserModule,
