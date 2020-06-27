@@ -1,0 +1,8 @@
+<p>
+  <!-- If I don´t use this property as optional, I get an error "type of undefine"
+  cuz the component is loading before the data member was received, and component say
+  "I dont have this data I'm going to spit out an error". That is the reason I use the safe navgation operator
+  to evoid the error in the console.
+  -->
+  {{user?.knowAs}}
+</p>
