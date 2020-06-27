@@ -1,8 +1,51 @@
+<div class="container mt4">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img
+          class="card-img-top img-thumbnail"
+          src="{{ user?.photoUrl }}"
+          alt="{{ user?.knowAs }}"
+        />
+        <div class="card-body">
+          <div>
+            <strong><i class="fa fa-location-arrow"></i> Localtion</strong>
+            <p>{{ user?.city }}, {{ user?.country }}</p>
+          </div>
+          <div>
+            <strong>Age: </strong>
+            <p>{{ user?.age }}</p>
+          </div>
+          <div>
+            <strong>Last Active: </strong>
+            <p>{{ user?.lastedActive }}</p>
+          </div>
+          <div>
+            <strong>Member since: </strong>
+            <p>{{ user?.created }}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-primary w-100">
+              <i class="fa fa-heart mr-1"></i>Like
+            </button>
+            <button class="btn btn-success w-100">
+              <i class="fa fa-envelope mr-1"></i>Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8"></div>
+  </div>
+</div>
+
 <p>
   <!-- If I don´t use this property as optional, I get an error "type of undefine"
   cuz the component is loading before the data member was received, and component say
   "I dont have this data I'm going to spit out an error". That is the reason I use the safe navgation operator
   to evoid the error in the console.
   -->
-  {{user?.knowAs}}
+  {{ user?.knowAs }}
 </p>
