@@ -1,4 +1,4 @@
-<div class="container mt4">
+<div class="container mt-4">
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
@@ -37,7 +37,28 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-8"></div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="member-tabset">
+          <tab heading="About {{ user?.knowAs }}" id="tab1">
+            <h4>Description</h4>
+            <p>{{ user?.introduction }}</p>
+            <h4>Looking for</h4>
+            <p>{{ user?.lookingFor }}</p>
+          </tab>
+          <tab heading="Interests">
+            <h4>Interests</h4>
+            <p>{{ user?.interests }}</p>
+          </tab>
+          <tab heading="Photos">
+            <p>Photos go here</p>
+          </tab>
+          <tab heading="Messages">
+            <p>Messages go here</p>
+          </tab>
+        </tabset>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -6,6 +6,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
 
 
 
@@ -45,6 +47,7 @@ export function TokenGetter(){
       HttpClientModule,
       FormsModule,
       BrowserAnimationsModule,
+      TabsModule.forRoot(),
       BsDropdownModule.forRoot(), // moduleimportedtocreatehttprequest\\\\\\\\\\\\\\\\nFormsModule
       RouterModule.forRoot(appRoutes),
       JwtModule.forRoot({
