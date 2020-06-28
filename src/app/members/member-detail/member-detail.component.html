@@ -4,17 +4,17 @@
       <div class="card">
         <img
           class="card-img-top img-thumbnail"
-          src="{{ user?.photoUrl }}"
-          alt="{{ user?.knowAs }}"
+          src="{{ user.photoUrl }}"
+          alt="{{ user.knowAs }}"
         />
         <div class="card-body">
           <div>
             <strong><i class="fa fa-location-arrow"></i> Localtion</strong>
-            <p>{{ user?.city }}, {{ user?.country }}</p>
+            <p>{{ user.city }}, {{ user.country }}</p>
           </div>
           <div>
             <strong>Age: </strong>
-            <p>{{ user?.age }}</p>
+            <p>{{ user.age }}</p>
           </div>
           <div>
             <strong>Last Active: </strong>
@@ -22,7 +22,7 @@
           </div>
           <div>
             <strong>Member since: </strong>
-            <p>{{ user?.created }}</p>
+            <p>{{ user.created }}</p>
           </div>
         </div>
         <div class="card-footer">
@@ -40,15 +40,15 @@
     <div class="col-sm-8">
       <div class="tab-panel">
         <tabset class="member-tabset">
-          <tab heading="About {{ user?.knowAs }}" id="tab1">
+          <tab heading="About {{ user.knowAs }}" id="tab1">
             <h4>Description</h4>
-            <p>{{ user?.introduction }}</p>
+            <p>{{ user.introduction }}</p>
             <h4>Looking for</h4>
-            <p>{{ user?.lookingFor }}</p>
+            <p>{{ user.lookingFor }}</p>
           </tab>
           <tab heading="Interests">
             <h4>Interests</h4>
-            <p>{{ user?.interests }}</p>
+            <p>{{ user.interests }}</p>
           </tab>
           <tab heading="Photos">
             <p>Photos go here</p>
