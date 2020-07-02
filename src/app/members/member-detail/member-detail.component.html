@@ -18,7 +18,7 @@
           </div>
           <div>
             <strong>Last Active: </strong>
-            <p>{{ user?.lastedActive }}</p>
+            <p>{{ user.lastedActive }}</p>
           </div>
           <div>
             <strong>Member since: </strong>
@@ -51,7 +51,7 @@
             <p>{{ user.interests }}</p>
           </tab>
           <tab heading="Photos">
-            <p>Photos go here</p>
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>           
           </tab>
           <tab heading="Messages">
             <p>Messages go here</p>
