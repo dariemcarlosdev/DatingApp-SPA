@@ -35,13 +35,7 @@ export class MemberDetailComponent implements OnInit {
         preview: false
       }
     ];
-    this.galleryImages = [
-      {
-        small: 'https://randomuser.me/api/portraits/women/18.jpg',
-        medium: 'https://randomuser.me/api/portraits/women/18.jpg',
-        big: 'https://randomuser.me/api/portraits/women/18.jpg'
-      }
-    ];
+    this.galleryImages = this.getImages();
   }
 
   getImages()  {
