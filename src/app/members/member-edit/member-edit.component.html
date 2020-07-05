@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="card-footer">
-            <button [disabled]="!editForm.dirty" form="editForm " class="btn btn-success btn-block">
+            <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-success btn-block">
               <i class="fa fa-save mr-1"></i>Save Changes
             </button>
         </div>
@@ -48,7 +48,7 @@
       <div class="tab-panel">
         <tabset class="member-tabset">
           <tab heading="Edit Profile">
-            <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
+            <form #editForm="ngForm" id="editForm" (ngSubmit)='updateUser()'>
               <h4>Description</h4>
               <textarea
                 name="introduction"
@@ -98,11 +98,3 @@
   </div>
 </div>
 
-<p>
-  <!-- If I don´t use this property as optional, I get an error "type of undefine"
-  cuz the component is loading before the data member was received, and component say
-  "I dont have this data I'm going to spit out an error". That is the reason I use the safe navgation operator
-  to evoid the error in the console.
-  -->
-  {{ user?.knowAs }}
-</p>
