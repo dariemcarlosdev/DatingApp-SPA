@@ -45,8 +45,10 @@ export class CustomHammerConfig extends HammerGestureConfig {
    };
    }
 
+   // @NgModule decorator with its metadata
+
 @NgModule({
-   declarations: [
+   declarations: [	
       AppComponent,
       NavComponent,
       HomeComponent,
